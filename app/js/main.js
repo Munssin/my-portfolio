@@ -133,3 +133,19 @@ $('input[type="submit"]').click( function() {
     var words = $('#e-mail').val().split(' ');
     alert(words.length);
 });
+
+$(window).scroll(function(){
+    var wScroll = $(this).scrollTop();
+
+    // Floating Elements
+
+    if(wScroll > $('#about').offset().top - $(window).height()){
+
+        var offset = (Math.min(0, wScroll - $('#about').offset().top +$(window).height() - 500)).toFixed();
+
+        $('.about-foto').css('background-position', '200' - parseInt(wScroll / 4) + 'px');
+        $('#about').css('background-position', '0' - parseInt(wScroll / 15) + 'px');
+        // $('.avto-usa-img').css({'transform': 'translate('+ offset +'px, '+ Math.abs(offset * 0.2) +'px)'});
+
+    }
+});

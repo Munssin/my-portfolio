@@ -51,6 +51,17 @@
     left: 32px;
     bottom: 30px;
   }
+  .git{
+    a{
+      font-size: 14px;
+      color: #a2a2a2;
+      text-align: center;
+      position: relative;
+      transition: 0.3s all ease;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
   .git:before{
     content: url(../img/git.png);
     height: 64px;
