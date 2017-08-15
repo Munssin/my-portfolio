@@ -1,0 +1,235 @@
+// skill
+#skill{
+  background-color: #000;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  // .skill-bg{
+  //   display: flex;
+  //   justify-content: center;
+  //   img{
+  //     position: absolute;
+  //     top: 30%;
+  //     height: 200px;
+  //     animation: skill-bg 8s linear infinite;
+  //   }
+  // }
+  // @keyframes skill-bg{
+  //   0%{ transform: rotateY(0deg); }
+  //   100%{ transform: rotateY(360deg); }
+  // }
+  .wrapper{
+      width: 400px;
+      font-family: 'Roboto', sans-serif;
+	    margin:0 auto;
+      padding-top: 200px;
+    }
+    .skill {
+      margin-bottom: 35px;
+      position: relative;
+			overflow-x:hidden;
+
+    }
+    .skill > p {
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        margin: 0;
+    }
+    .skill:before{
+        width: 100%;
+        height: 5px;
+        content: "";
+        display: block;
+        position: absolute;
+        background: grey;
+        bottom: 0;
+    }
+    .skill-bar {
+        width: 100%;
+        height: 5px;
+        background:#fff;
+        display: block;
+        position: relative;
+    }
+    /* SKILL 1 */
+    .skill1{
+        width: 95%;
+    }
+    .skill-bar span{
+        position: absolute;
+        top: -30px;
+        padding: 0;
+        font-size: 18px;
+        padding: 3px 0;
+        font-weight: 500;
+    }
+    .skill-bar {
+        position: relative;
+    }
+    .skill1 .skill-count1 {
+        right: 0;
+				color:#fff;
+    }
+    /* SKILL 2 */
+    .skill2{
+        width: 85%;
+    }
+    .skill2 .skill-count2 {
+        right: 0;
+				color:#fff;
+    }
+    /* SKILL 3 */
+    .skill3{
+        width: 75%;
+    }
+    .skill3 .skill-count3 {
+        right: 0;
+			  color:#fff;
+    }
+    /* SKILL 4 */
+    .skill4{
+        width: 65%;
+    }
+    .skill4 .skill-count4 {
+        right: 0;
+			  color:#fff;
+    }
+  .main-skill{
+    z-index: 99;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    }
+    .main-skill:hover{
+        transform: scale(1.2);
+      }
+    .html{
+      position: absolute;
+      left: 45%;
+      text-align: center;
+      font-size: 48px;
+      top: 50px;
+      text-transform: uppercase;
+    }
+    .css{
+      position: absolute;
+      left: 50px;
+      font-size: 48px;
+      top: 45%;
+      text-transform: uppercase;
+    }
+    .js{
+      position: absolute;
+      right: 50px;
+      font-size: 48px;
+      top: 45%;
+      text-transform: uppercase;
+    }
+    .other-skills{
+      display: flex;
+      justify-content: center;
+      ul{
+        list-style: none;
+        position: absolute;
+        display: inline-flex;
+        bottom: 80px;
+        li{
+          padding: 0 20px;
+          font-size: 14px;
+          color: #fff;
+          cursor: pointer;
+          transition: 0.3s ease all;
+        }
+        li:hover{
+            transform: scale(1.2);
+          }
+      }
+    }
+    .asss{
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      .but-portf{
+        font-size: 16px;
+        position: relative;
+        text-transform: uppercase;
+        color: #fff;
+        left: -50%;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        padding: 5px 10px;
+        transition: 0.3s all ease;
+        cursor: pointer;
+        img{
+          height: 30px;
+          width: 30px;
+          margin-left: 20px;
+          transition: 0.3s all ease;
+          transform: translateY(-5px);
+        }
+      }
+      .but-portf:hover {
+
+      }
+      .but-portf:hover img{
+        transform: translateY(5px);
+      }
+    }
+}// skill
+@media(max-width: 1024px){
+  #skill{
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+    .wrapper{
+        width: 400px;
+        font-family: 'Roboto', sans-serif;
+  	    margin:0 auto;
+        padding-top: 75px;
+      }
+      .skill {
+        margin-bottom: 50px;
+      }
+    .main-skill{
+        display: none;
+      }
+      .other-skills{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 75px;
+        ul{
+          text-align: center;
+          display: block;
+          position: relative;
+          bottom: 0;
+          li{
+            padding: 5px 0;
+          }
+        }
+      }
+      .asss{
+        bottom: 75px;
+      }
+  }
+}
+@media(max-width: 569px){
+  #skill{
+    padding-bottom: 0;
+    .wrapper{
+        width: 300px;
+        font-family: 'Roboto', sans-serif;
+  	    margin:0 auto;
+        padding-top: 25px;
+      }
+      .other-skills{
+        padding-bottom: 25px;
+        ul{
+          left: -25px;
+        }
+      }
+      .asss{
+      display: none;
+      }
+  }
+}

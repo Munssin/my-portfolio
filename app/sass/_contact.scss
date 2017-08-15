@@ -1,0 +1,169 @@
+#contact{
+  margin-bottom: 75px;
+  h2{
+    text-align: center;
+    padding-top: 50px;
+    color: #000;
+    padding-bottom: 10px;
+  }
+  h4{
+    font-size: 14px;
+    color: #a2a2a2;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+  }
+  h4:after{
+    content: url(../img/work-line.png);
+    position: absolute;
+    bottom: -30px;
+    left: 44.5%;
+  }
+  p{
+    font-size: 14px;
+    color: #a2a2a2;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 150px;
+  }
+  .cont{
+    font-size: 14px;
+    color: #a2a2a2;
+    text-align: center;
+    position: relative;
+    transition: 0.3s all ease;
+    cursor: pointer;
+  }
+  .cont:hover{
+    transform: scale(1.1);
+  }
+  .email:before{
+    content: url(../img/email.png);
+    height: 64px;
+    position: absolute;
+    left: 36px;
+    bottom: 30px;
+  }
+  .skype:before{
+    content: url(../img/skype-logo.png);
+    height: 64px;
+    position: absolute;
+    left: 32px;
+    bottom: 30px;
+  }
+  .git:before{
+    content: url(../img/git.png);
+    height: 64px;
+    position: absolute;
+    left: 32px;
+    bottom: 30px;
+  }
+  .adres:before{
+    content: url(../img/home.png);
+    height: 64px;
+    position: absolute;
+    left: 32px;
+    bottom: 30px;
+  }
+  .tel:before{
+    content: url(../img/tel.png);
+    height: 64px;
+    position: absolute;
+    left: 32px;
+    bottom: 30px;
+  }
+  .soc{
+    margin-top: -75px;
+    font-size: 14px;
+    color: #a2a2a2;
+    text-align: center;
+    position: relative;
+    ul{
+      list-style: none;
+      li{
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: 0.3s all ease;
+      }
+      li:hover{
+        transform: scale(1.3);
+      }
+    }
+  }
+}
+@media(max-width: 1024px){
+  #contact{
+    h4:after{
+      content: '';
+    }
+    .cont{
+      font-size: 24px;
+      max-width: 220px;
+      margin: 0 auto;
+      margin-bottom: 80px;
+      color: #000;
+      font-weight: bold;
+    }
+    .cont:hover{
+      transform: scale(1.1);
+    }
+    .email:before{
+      content: 'Email:';
+      left: 70px;
+      bottom: 15px;
+      color: #a2a2a2;
+    }
+    .skype:before{
+      content: 'Skype:';
+      left: 70px;
+      bottom: 15px;
+      color: #a2a2a2;
+    }
+    .git:before{
+      content: 'Github:';
+      left: 70px;
+      bottom: 15px;
+      color: #a2a2a2;
+    }
+    .adres:before{
+      content: 'Адреса:';
+      left: 70px;
+      bottom: 15px;
+      color: #a2a2a2;
+    }
+    .tel:before{
+      content: 'Телефон:';
+      left: 70px;
+      bottom: 15px;
+      color: #a2a2a2;
+    }
+    .soc{
+      margin-top: 0;
+      font-size: 14px;
+      color: #a2a2a2;
+      text-align: center;
+      position: relative;
+      ul{
+        display: inline-flex;
+        li{
+          padding-right: 30px;
+        }
+        li:hover{
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+}
+@media(max-width: 569px){
+  #contact{
+    margin-bottom: 50px;
+    h2{
+      padding-top: 25px;
+    }
+    p{
+      margin-top: 25px;
+      margin-bottom: 100px;
+    }
+  }
+}
