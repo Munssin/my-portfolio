@@ -32,7 +32,8 @@
   <!-- header -->
   <header>
       <video autoplay="true" muted="muted" loop>
-          <source src="/video/3.mp4" type="video/mp4">
+          <source class="mid-scren" src="/video/0.mp4" type="video/mp4">
+          <source class="big-scren" src="/video/3.mp4" type="video/mp4">
       </video>
           <h1>web Portfolio</h1>
           <div class="main-logo"></div>
@@ -218,11 +219,18 @@
   <!-- section send-mail -->
   <section id="send-mail">
     <div class="container">
-      <p>Вкажіть свою електронну пошту і я звяжусь з вами</p>
+      <p>Ви можете надіслати запитання, і я обов'язково відповім вам</p>
       <form>
-        <img class="mails" src="/img/mail.png" alt="Email">
-        <input type="email" id="e-mail" placeholder="Enter your email to update">
-        <input type="submit" id="submit" value="submit">
+        <div class="asa">
+          <input type="text" id="name" placeholder="Введіть Ваше ім'я">
+          <!-- <img class="mails" src="/img/mail.png" alt="Email"> -->
+          <!-- <label class="em" for="e-mail">your email</label> -->
+          <input type="email" id="e-mail" placeholder="Введіть Ваш email">
+          <label for="e-mail"></label>
+        </div>
+        <br>
+        <textarea name="textarea" id="textarea" cols="20" rows="5" placeholder="Що вас цікавить?"></textarea>
+        <input type="submit" id="submit" value="Надіслати">
       </form>
     </div>
   </section>

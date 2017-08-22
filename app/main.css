@@ -37,6 +37,15 @@ header {
     height: 100vh;
     -o-object-fit: cover;
     object-fit: cover; }
+    header video .big-scren {
+      display: block; }
+    header video .mid-scren {
+      display: none; }
+    @media (max-width: 1440px) {
+      header video .mid-scren {
+        display: block; }
+      header video .big-scren {
+        display: none; } }
   header h1 {
     position: absolute;
     z-index: 999;
@@ -293,7 +302,7 @@ footer {
       -webkit-transform: translateY(5px);
       transform: translateY(5px); }
   #about .about-foto {
-    background-image: url(../img/me.png);
+    background-image: url(../img/me11.png);
     width: 100%;
     height: 450px;
     background-repeat: no-repeat;
@@ -602,7 +611,6 @@ nav {
 
 #send-mail {
   position: relative;
-  height: 300px;
   background-color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -616,36 +624,41 @@ nav {
   #send-mail p {
     text-transform: uppercase;
     color: #fff;
-    top: 75px;
+    top: 25px;
     position: absolute; }
   #send-mail form {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
-    #send-mail form .mails {
-      position: absolute;
-      z-index: 99;
-      left: 15px;
-      top: 8px;
-      -webkit-transition: 0.3s all ease;
-      transition: 0.3s all ease; }
-    #send-mail form #e-mail {
+    margin: 75px 0; }
+    #send-mail form .asa {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 5px; }
+      #send-mail form .asa #name {
+        margin-right: 30px; }
+      #send-mail form .asa #e-mail, #send-mail form .asa #name {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        color: #fff;
+        padding-left: 25px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        background-color: #000;
+        outline: none; }
+    #send-mail form ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #fff; }
+    #send-mail form textarea {
       position: relative;
-      width: 800px;
-      height: 50px;
+      width: 100%;
       margin-right: 30px;
       color: #fff;
-      padding-left: 75px;
+      padding-left: 25px;
       border: 2px solid #fff;
       border-radius: 5px;
       background-color: #000;
       outline: none; }
-    #send-mail form ::-webkit-input-placeholder {
-      /* Chrome/Opera/Safari */
-      color: #fff; }
     #send-mail form #submit {
       height: 50px;
       width: 120px;
@@ -736,6 +749,15 @@ nav {
     position: absolute;
     left: 32px;
     bottom: 30px; }
+  #contact .git a {
+    font-size: 14px;
+    color: #a2a2a2;
+    text-align: center;
+    position: relative;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    text-decoration: none; }
   #contact .git:before {
     content: url(../img/git.png);
     height: 64px;

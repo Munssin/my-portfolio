@@ -40,6 +40,20 @@ header{
     //width: auto;
     //height: auto;
     //transform: translate(-50%, -50%);
+    .big-scren{
+      display: block;
+    }
+    .mid-scren{
+      display: none;
+    }
+    @media (max-width:1440px) {
+      .mid-scren{
+        display: block;
+      }
+      .big-scren{
+        display: none;
+      }
+    }
   }
   h1{
     position: absolute;

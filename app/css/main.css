@@ -31,6 +31,15 @@ header {
     height: 100vh;
     -o-object-fit: cover;
     object-fit: cover; }
+    header video .big-scren {
+      display: block; }
+    header video .mid-scren {
+      display: none; }
+    @media (max-width: 1440px) {
+      header video .mid-scren {
+        display: block; }
+      header video .big-scren {
+        display: none; } }
   header h1 {
     position: absolute;
     z-index: 999;
@@ -551,7 +560,6 @@ nav {
 
 #send-mail {
   position: relative;
-  height: 300px;
   background-color: #000;
   display: flex;
   justify-content: center;
@@ -559,32 +567,40 @@ nav {
   #send-mail p {
     text-transform: uppercase;
     color: #fff;
-    top: 75px;
-    position: absolute; }
+    top: 30px;
+    position: absolute;
+    font-size: 18px; }
   #send-mail form {
     position: relative;
-    display: flex;
-    justify-content: space-around; }
-    #send-mail form .mails {
-      position: absolute;
-      z-index: 99;
-      left: 15px;
-      top: 8px;
-      transition: 0.3s all ease; }
-    #send-mail form #e-mail {
-      position: relative;
-      width: 800px;
-      height: 50px;
-      margin-right: 30px;
-      color: #fff;
-      padding-left: 75px;
-      border: 2px solid #fff;
-      border-radius: 5px;
-      background-color: #000;
-      outline: none; }
+    margin: 75px 0; }
+    #send-mail form .asa {
+      display: flex;
+      margin-bottom: 10px; }
+      #send-mail form .asa #name {
+        margin-right: 30px; }
+      #send-mail form .asa #e-mail, #send-mail form .asa #name {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        color: #fff;
+        padding-left: 25px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        background-color: #000;
+        outline: none; }
     #send-mail form ::-webkit-input-placeholder {
       /* Chrome/Opera/Safari */
       color: #fff; }
+    #send-mail form textarea {
+      position: relative;
+      width: 100%;
+      color: #fff;
+      padding: 10px 25px;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      background-color: #000;
+      outline: none;
+      margin-bottom: 25px; }
     #send-mail form #submit {
       height: 50px;
       width: 120px;
